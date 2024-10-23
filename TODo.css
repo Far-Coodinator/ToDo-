@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: radial-gradient( circle 331px at 1.4% 52.9%,  rgba(255,236,2,1) 0%, rgba(255,223,2,1) 33.6%, rgba(255,187,29,1) 61%, rgba(255,175,7,1) 100.7% );
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 300px;
+    height: 500px;
+    background-image: linear-gradient(to left bottom, #786a72, #756773, #706574, #6a6376, #626277, #5c6378, #556478, #4f6577, #4d6874, #4e6971, #516b6d, #566c6a);
+    border-radius: 15px;
+    box-shadow: 0 2px 15px 0 black;
+}
+
+.titl{
+    text-align: center;
+    padding: 10px 0 15px 0 ; 
+    text-decoration: underline;
+    font-family: "Akronim", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: rgba(235, 209, 209, 0.872);
+}
+
+.create{
+    margin: auto; width: fit-content; padding: 8px; 
+}
+
+input[type="text"]{
+    font-size: 16px;
+    padding: 4px 0 4px 8px ;
+    border: none;
+    background-color: rgba(29, 27, 27, 0.208);
+    border-bottom: 2px solid black;
+}
+input:focus {
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+    background-image: linear-gradient( 109.6deg,  rgba(217,67,67,1) 11.2%, rgba(242,106,75,1) 100.6% );
+    border: none;
+    font-weight: 600;
+    transition-duration: 1m;
+    width: 40px;
+    height: 29px;
+    vertical-align: top;
+    transition-duration:  0.5s;
+
+}
+
+button:hover{
+    border-bottom: 2px solid rgb(78, 202, 78);
+}
+
+.lists{
+    width: 90%;
+    height: 370px;
+    margin: auto;
+    padding:3px 5px ;
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.lists::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, and Edge */
+}
+
+.alert{
+    text-align: center;
+    position: relative;
+    top: 5px;
+    color: rgb(234, 60, 30);
+    font-size: 16px;
+    text-shadow: 1.5px 1.5px black;
+}
+
+.todo{
+    background-color: rgba(29, 27, 27, 0.324);
+    padding: 5px 0px 5px 8px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    color: rgb(255, 234, 0);
+}
